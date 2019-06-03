@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+        <div class="cod-container">
+                <div class="form-header">
+                    <img src="img/Logo.png" alt="Logo de CodigoMasters">
+                    <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
+                </div>
+        
+                <div class="form-content">
+                    <form action="#" class="cod-form">
+                        <div class="form-title">
+                            <h3>SISTEMA DE REGISTRO</h3>
+                        </div>
+                        <div class="input-group">
+                                <input type="user" class="form-input" name="form-input" id="nombre">
+                                <label class="label" for="reg-correo">Nombre completo</label>
+                            </div>
+                        <div class="input-group">
+                                <input type="number" class="form-input" name="form-input" id="email">
+                                <label class="label" for="reg-correo">Correo</label>
+                            </div>
+
+                        <div class="input-group">
+                                <input type="number" class="form-input" name="form-input" id="telefono">
+                                <label class="label" for="reg-correo">Telefono</label>
+                            </div>
+                            <div class="input-group">
+                                    <input type="user" class="form-input" disabled="true" name="form-input" id="carne">
+                                    <label class="label" for="reg-correo">Carné</label>
+                                </div>
+                            <div class="input-group select">
+                                
+                                <select id="universidad" disabled="true" class="select-css">
+                                    <option value="">UNIVERSIDAD</option>
+                                    <option value="tec">TEC</option>
+                                    <option value="ucr">UCR</option>
+                                    <option value="utn">UTN</option>
+                                    <option value="una">UNA</option>
+                                </select>
+                            </div>
+                            
+
+                            <div class="input-group">
+                                <input type="submit" class="form-input" value="Registrar">
+                            </div>
+                            <input type="checkbox" name="producto"  onclick="habilita()"  /> Estudiante?
+                    </form>
+                </div>
+        
+                
+   
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/registroClient.js"></script>
+
+</script>
+</body>
+</html>
