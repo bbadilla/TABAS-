@@ -3,8 +3,7 @@
 	padding:0;
 }
  
-/*EN EL VIDEO HAY UN ERROR POR EL CUAL NO SE VISUALIZA EN GOOGLE CHROME,
-EL CÓDIGO A CONTINUACIÓN YA ESTA CORREGIDO*/
+
 body {
     background-image: linear-gradient(to right, #06a1df, #eefcff);
 }
