@@ -37,3 +37,14 @@ BEGIN
     COMMIT;
 END;
 $$
+
+
+CREATE OR REPLACE PROCEDURE udsp_ins_maleta(text, int, int, text)
+LANGUAGE 'plpgsql'
+AS $$
+BEGIN
+ 	INSERT INTO Maleta(Color, Peso, Costo, C_Usuario, ID_BagCart, ID_Avion)
+		VALUES($1,$2,$3,$4,NULL,NULL);
+    COMMIT;
+END;
+$$
