@@ -1,0 +1,14 @@
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.deps.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.runtimeconfig.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.RazorTargetAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.pdb
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.pdb

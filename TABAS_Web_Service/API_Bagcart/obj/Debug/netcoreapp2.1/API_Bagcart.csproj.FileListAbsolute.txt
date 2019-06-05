@@ -1,0 +1,15 @@
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\bin\Debug\netcoreapp2.1\API_Bagcart.deps.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\bin\Debug\netcoreapp2.1\API_Bagcart.runtimeconfig.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\bin\Debug\netcoreapp2.1\API_Bagcart.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\bin\Debug\netcoreapp2.1\API_Bagcart.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.RazorTargetAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\bin\Debug\netcoreapp2.1\API_Bagcart.pdb
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\API_Bagcart.pdb
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Bagcart\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
