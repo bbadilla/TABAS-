@@ -25,7 +25,9 @@ CREATE TABLE Maleta(
 	Costo			INT				NOT NULL,
 	C_Usuario		VARCHAR(35)			NOT NULL,
 	ID_BagCart		INT,
-	ID_Avion		INT				
+	ID_Avion		INT,
+	Validez 		BOOLEAN				NOT NULL,
+	Validez_Text		VARCHAR(50)
 );
 CREATE TABLE Modelos(
 	Identificador		SERIAL,
