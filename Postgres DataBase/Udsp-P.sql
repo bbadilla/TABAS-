@@ -48,3 +48,14 @@ BEGIN
     COMMIT;
 END;
 $$
+
+CREATE OR REPLACE PROCEDURE udsp_upd_Maleta(boolean, text, int)
+LANGUAGE 'plpgsql'
+AS $$
+BEGIN
+ 	UPDATE Maleta
+	SET Validez = $1, Validez_Text = $2
+	WHERE Identificador = $3;
+    COMMIT;
+END;
+$$
