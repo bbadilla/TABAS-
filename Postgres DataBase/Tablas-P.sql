@@ -43,3 +43,4 @@ CREATE TABLE BagCart(
 	Marca			VARCHAR(35)			NOT NULL,
 	C_Vuelo			VARCHAR(4)			NOT NULL,
 	Sello			VARCHAR(10)			NOT NULL
+);
