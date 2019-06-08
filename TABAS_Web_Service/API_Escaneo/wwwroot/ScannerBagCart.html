@@ -6,51 +6,78 @@
     <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>	
   </head>
   <body>
-        <div class="cod-container">
-        <div class="form-header">
-            <img src="img/Logo.png" alt="Logo de CodigoMasters">
-            <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
-        </div>
+      <div class="cod-container">
+          <div class="form-header">
+              <img src="img/Logo.png" alt="Logo de CodigoMasters">
+              <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
+          </div>
+          <div class="form-content">
+              <form class="cod-form">
+                  <div class="form-title">
+                      <h3>Scanner</h3>
+                  </div>
+                  <div class="input-group" id="c"></div>
+                  <video id="preview" width="300" height="300"></video>
+                  <script>
+                      let scanner = new Instascan.Scanner(
+                          {
+                              video: document.getElementById('preview')
+                          }
+                      );
+                      scanner.addListener('scan', function (content) {
+                          alert('Escaneando el contenido: ' + content);
+                          document.getElementById("c").innerHTML = content;
+                          window.open(content, "_blank");
+                      });
+                      Instascan.Camera.getCameras().then(cameras => {
+                          if (cameras.length > 0) {
+                              scanner.start(cameras[0]);
+                          } else {
+                              console.error("No existe");
+                          }
+                      });
 
-        <div class="form-content">
-            <form action="#" class="cod-form">
-                <div class="form-title">
-                    <h3>Scanner</h3>
-                </div>
-                <div class="input-group" id="c"></div>
-    <video id="preview" width="300" height="300"  ></video>
-    <script>
-        let scanner = new Instascan.Scanner(
-            {
-                video: document.getElementById('preview')
-            }
-        );
-        scanner.addListener('scan', function(content) {
-            alert('Escaneando el contenido: ' + content);
-            document.getElementById("c").innerHTML = content;
-            window.open(content, "_blank");
-        });
-        Instascan.Camera.getCameras().then(cameras => 
-        {
-            if(cameras.length > 0){
-                scanner.start(cameras[0]);
-            } else {
-                console.error("No existe");
-            }
-        });
-        
-    </script>
-    <div class="input-group">
-            <input type="user" class="form-input" name="form-input" id="code">
-            <label class="label" for="pass">Identificador de BagCart</label>
-        </div>
-        <div class="input-group">
-                <input type="user" class="form-input" name="form-input" id="responsable">
-                <label class="label" for="pass">Responsable</label>
-            </div>
-        <div class="input-group">
-            <input type="submit" class="form-input" value="Asignar BagCart">
-        </div>
-        
- </body>
+                  </script>
+                  <div class="input-group">
+                      <input type="user" class="form-input" id="code">
+                      <label class="label" for="pass">Identificador de BagCart</label>
+                  </div>
+                  <div class="input-group">
+                      <input type="user" class="form-input" id="maleta">
+                      <label class="label" for="pass">Identificador de Maleta</label>
+                  </div>
+                  <div class="input-group">
+                      <input type="user" class="form-input" id="responsable">
+                      <label class="label" for="pass">Responsable</label>
+                  </div>
+                  <div class="input-group">
+                      <input type="button" id="Save" class="form-input" value="Asignar Maleta a BagCart">
+                  </div>
+              </form>
+          </div>
+
+          <script src="js/jquery-3.3.1.min.js"></script>
+          <script src="js/form.js"></script>
+          <script src="Scripts/jquery-3.3.1.js"></script>>
+          <script>
+              $(document).ready(function () {
+                  $("#Save").click(function () {
+                      var data = {
+                          id_bagcart: $("#code").val(),
+                          identificador: $("#maleta").val()
+                      }
+                      var json = JSON.stringify(data)
+                      $.ajax({
+                          url: '/api/maleta/asign_BC/',
+                          type: 'PUT',
+                          contentType: "application/json; charset=utf-8",
+                          data: json,
+                          success: function (results) {
+                          }
+                      })
+                  });
+              });
+
+          </script>
+</body>
 </html>

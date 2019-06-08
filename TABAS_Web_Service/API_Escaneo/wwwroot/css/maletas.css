@@ -142,7 +142,7 @@ input[type="password"] {
     color: #FF0000;
 }
 
-input[type="submit"] {
+input[type="button"] {
     background: none;
     border: none;
     background: #f00800;
@@ -156,7 +156,7 @@ input[type="submit"] {
     transition: all .5s ease;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background: #021e26;
 }
 

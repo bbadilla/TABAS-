@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,34 +13,59 @@
             <img src="img/Logo.png" alt="Logo de CodigoMasters">
             <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
         </div>
-
         <div class="form-content">
-            <form action="#" class="cod-form">
+            <form class="cod-form">
                 <div class="form-title">
                     <h3>Iniciar Sesión</h3>
                 </div>
-
                 <div class="input-group">
-                    <input type="user" class="form-input" name="form-input" id="user">
+                    <input type="user" class="form-input" id="user">
                     <label class="label" for="correo">Usuario</label>
                 </div>
-
                 <div class="input-group">
                     <input type="password" class="form-input" name="form-input" id="pass">
                     <label class="label" for="pass">Contraseña</label>
                 </div>
-
                 <div class="input-group">
-                    <input type="submit" class="form-input" value="Iniciar Sesión">
+                    <input type="button" onclick="find()" class="form-input" value="Registrar">
                 </div>
-               
+
             </form>
         </div>
 
-        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="Scripts/jquery-3.3.1.js"></script>
+        <script>
+            var uri = 'api/user';
+            $(document).ready(function () {
+                // Send an AJAX request
+                $.getJSON(uri)
+                    .done(function (data) {
+                        $.each(data, function (key, item) {
+                            $('<li>', { text: formatItem(item) }).appendTo($('#carros'));
+                        });
+                    });
+            });
+            function formatItem(item) {
+                if (item.iD_Rol == 1 || item.iD_Rol == 2) {
+                    window.location.href = "index.html";
+                }
+            }
+            function find() {
+                var id = $('#user').val();
+                var id1 = $('#pass').val();
+                $.getJSON(uri + '/' + id + '/' + id1 + '/')
+                    .done(function (data) {
+                        $('#carro').text(formatItem(data));
+                    })
+                    .fail(function (jqXHR, textStatus, err) {
+                        $('#carro').text('Error: ' + err);
+                    });
+            }
+        </script>
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/form.js"></script>
+
 </body>
 </html>

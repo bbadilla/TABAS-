@@ -14,5 +14,7 @@ namespace API_Escaneo.Models
         public string c_usuario;
         public int id_bagcart;
         public int id_avion;
+        public string validez;
+        public string validez_text;
     }
 }

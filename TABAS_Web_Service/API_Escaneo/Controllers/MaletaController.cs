@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API_Escaneo.Controllers
 {
-    [Route("api/[controller]")]
+
     [ApiController]
     public class MaletaController : Controller
     {
@@ -22,7 +22,7 @@ namespace API_Escaneo.Controllers
 
 
 
-        [Route("/asign_BC")]
+        [Route("api/[controller]/asign_BC")]
         [HttpPut]
         public ActionResult<Maleta> Asign_BC([FromBody]Maleta contactMaster)
         {
@@ -34,7 +34,7 @@ namespace API_Escaneo.Controllers
             return _contactMasterRepo.Asign_BC(contactMaster);
         }
 
-        [Route("/asign_airship")]
+        [Route("api/[controller]/asign_airship")]
         [HttpPut]
         public ActionResult<Maleta> Asign_airship([FromBody]Maleta contactMaster)
         {
