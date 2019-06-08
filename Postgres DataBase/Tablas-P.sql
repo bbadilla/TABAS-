@@ -8,7 +8,7 @@ CREATE TABLE Vuelo(
 	A_Salida		VARCHAR(3)		NOT NULL,
 	A_Llegada		VARCHAR(3)		NOT NULL,
 	Millas			INT				NOT NULL,
-	ID_Aeronave		INT				NOT NULL
+	ID_Aeronave		INT
 );
 CREATE TABLE Aeronave(
 	Identificador	SERIAL,
