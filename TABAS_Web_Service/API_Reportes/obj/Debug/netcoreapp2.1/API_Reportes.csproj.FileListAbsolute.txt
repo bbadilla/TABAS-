@@ -1,0 +1,11 @@
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\bin\Debug\netcoreapp2.1\API_Reportes.deps.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\bin\Debug\netcoreapp2.1\API_Reportes.runtimeconfig.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\bin\Debug\netcoreapp2.1\API_Reportes.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\bin\Debug\netcoreapp2.1\API_Reportes.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Reportes\obj\Debug\netcoreapp2.1\API_Reportes.RazorTargetAssemblyInfo.cache

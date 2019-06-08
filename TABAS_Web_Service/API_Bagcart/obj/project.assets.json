@@ -94,6 +94,27 @@
           "lib/net451/DynamixPostgreSQLHandler.dll": {}
         }
       },
+      "Intersoft.Crosslight/6.0.5000.975": {
+        "type": "package",
+        "compile": {
+          "lib/Intersoft.Crosslight.dll": {}
+        },
+        "runtime": {
+          "lib/Intersoft.Crosslight.dll": {}
+        }
+      },
+      "Intersoft.Crosslight.Services.Reporting/6.0.5000.975": {
+        "type": "package",
+        "dependencies": {
+          "Intersoft.Crosslight": "6.0.5000.975"
+        },
+        "compile": {
+          "lib/Intersoft.Crosslight.Services.Reporting.dll": {}
+        },
+        "runtime": {
+          "lib/Intersoft.Crosslight.Services.Reporting.dll": {}
+        }
+      },
       "Marten/3.5.0": {
         "type": "package",
         "dependencies": {
@@ -5001,6 +5022,56 @@
         "dynamixpostgresqlhandler.1.0.0.nupkg.sha512",
         "dynamixpostgresqlhandler.nuspec",
         "lib/net451/DynamixPostgreSQLHandler.dll"
+      ]
+    },
+    "Intersoft.Crosslight/6.0.5000.975": {
+      "sha512": "icRCEz9Fl9HI7LyiUniMnIN8TeI1vRI4QPZQyGDx3sTyX5YxDGNHE2uLXG3ShsI1EOSY4x/Vxycs/QTOL3uqnQ==",
+      "type": "package",
+      "path": "intersoft.crosslight/6.0.5000.975",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "intersoft.crosslight.6.0.5000.975.nupkg.sha512",
+        "intersoft.crosslight.nuspec",
+        "lib/Intersoft.Crosslight.dll",
+        "lib/MonoAndroid10/Intersoft.Crosslight.Android.dll",
+        "lib/MonoAndroid10/Intersoft.Crosslight.dll",
+        "lib/NetCore45/Intersoft.Crosslight.WinRT.dll",
+        "lib/NetCore45/Intersoft.Crosslight.WinRT/Controls/TabControl.xaml",
+        "lib/NetCore45/Intersoft.Crosslight.WinRT/Themes/DatePicker.xaml",
+        "lib/NetCore45/Intersoft.Crosslight.WinRT/Themes/Generic.xaml",
+        "lib/NetCore45/Intersoft.Crosslight.dll",
+        "lib/Xamarin.iOS10/Intersoft.Crosslight.dll",
+        "lib/Xamarin.iOS10/Intersoft.Crosslight.iOS.dll",
+        "lib/wp8/Intersoft.Crosslight.WinPhone.dll",
+        "lib/wp8/Intersoft.Crosslight.dll",
+        "tools/CocoaDialog.app.zip",
+        "tools/CocoaDialog.sh",
+        "tools/NugetUtil.dll",
+        "tools/dependencies.xml",
+        "tools/init.ps1",
+        "tools/install.ps1"
+      ]
+    },
+    "Intersoft.Crosslight.Services.Reporting/6.0.5000.975": {
+      "sha512": "C+LSxIjZ1GWEoWb7C866OzGuVfzRb5+hHlZS7D1rteMLVRtes95NVhX0g5iCgwUt3xI+pxTGiaAv6JmJhzmbIA==",
+      "type": "package",
+      "path": "intersoft.crosslight.services.reporting/6.0.5000.975",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "intersoft.crosslight.services.reporting.6.0.5000.975.nupkg.sha512",
+        "intersoft.crosslight.services.reporting.nuspec",
+        "lib/Intersoft.Crosslight.Services.Reporting.dll",
+        "lib/MonoAndroid10/Intersoft.Crosslight.Services.Reporting.Android.dll",
+        "lib/MonoAndroid10/Intersoft.Crosslight.Services.Reporting.dll",
+        "lib/NetCore45/Intersoft.Crosslight.Services.Reporting.WinRT.dll",
+        "lib/NetCore45/Intersoft.Crosslight.Services.Reporting.dll",
+        "lib/Xamarin.iOS10/Intersoft.Crosslight.Services.Reporting.dll",
+        "lib/Xamarin.iOS10/Intersoft.Crosslight.Services.Reporting.iOS.dll",
+        "lib/wp8/Intersoft.Crosslight.Services.Reporting.WinPhone.dll",
+        "lib/wp8/Intersoft.Crosslight.Services.Reporting.dll"
       ]
     },
     "Marten/3.5.0": {
@@ -13284,6 +13355,7 @@
       "Docker.DotNet >= 3.125.2",
       "Drapper >= 1.2.0",
       "DynamixPostgreSQLHandler >= 1.0.0",
+      "Intersoft.Crosslight.Services.Reporting >= 6.0.5000.975",
       "Marten >= 3.5.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -13353,6 +13425,10 @@
           "DynamixPostgreSQLHandler": {
             "target": "Package",
             "version": "[1.0.0, )"
+          },
+          "Intersoft.Crosslight.Services.Reporting": {
+            "target": "Package",
+            "version": "[6.0.5000.975, )"
           },
           "Marten": {
             "target": "Package",
@@ -13438,6 +13514,26 @@
       "warningLevel": 1,
       "message": "El paquete \"DynamixPostgreSQLHandler 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "DynamixPostgreSQLHandler",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Intersoft.Crosslight 6.0.5000.975\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Intersoft.Crosslight",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Intersoft.Crosslight.Services.Reporting 6.0.5000.975\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Intersoft.Crosslight.Services.Reporting",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

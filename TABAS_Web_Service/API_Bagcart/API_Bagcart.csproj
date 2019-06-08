@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Folder Include="Web\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
     <PackageReference Include="Docker.DotNet" Version="3.125.2" />
     <PackageReference Include="Drapper" Version="1.2.0" />
     <PackageReference Include="DynamixPostgreSQLHandler" Version="1.0.0" />
+    <PackageReference Include="Intersoft.Crosslight.Services.Reporting" Version="6.0.5000.975" />
     <PackageReference Include="Marten" Version="3.5.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.App" />

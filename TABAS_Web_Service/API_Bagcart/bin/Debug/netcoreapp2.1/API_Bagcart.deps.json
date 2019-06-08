@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e03663c2d9e1f4db82df1aadc885647f4441a94b"
+    "signature": "8aab70f191c9fd86ac6afa091e2351fe71f4c400"
   },
   "compilationOptions": {
     "defines": [
@@ -28,6 +28,7 @@
           "Docker.DotNet": "3.125.2",
           "Drapper": "1.2.0",
           "DynamixPostgreSQLHandler": "1.0.0",
+          "Intersoft.Crosslight.Services.Reporting": "6.0.5000.975",
           "Marten": "3.5.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.AspNetCore.App": "2.1.1",
@@ -149,6 +150,31 @@
         },
         "compile": {
           "lib/net451/DynamixPostgreSQLHandler.dll": {}
+        }
+      },
+      "Intersoft.Crosslight/6.0.5000.975": {
+        "runtime": {
+          "lib/Intersoft.Crosslight.dll": {
+            "assemblyVersion": "6.0.5000.1",
+            "fileVersion": "6.0.5000.975"
+          }
+        },
+        "compile": {
+          "lib/Intersoft.Crosslight.dll": {}
+        }
+      },
+      "Intersoft.Crosslight.Services.Reporting/6.0.5000.975": {
+        "dependencies": {
+          "Intersoft.Crosslight": "6.0.5000.975"
+        },
+        "runtime": {
+          "lib/Intersoft.Crosslight.Services.Reporting.dll": {
+            "assemblyVersion": "6.0.5000.1",
+            "fileVersion": "6.0.5000.975"
+          }
+        },
+        "compile": {
+          "lib/Intersoft.Crosslight.Services.Reporting.dll": {}
         }
       },
       "Marten/3.5.0": {
@@ -3813,6 +3839,20 @@
       "sha512": "sha512-9/HNvYz2SeyePaWwwjBLiPwhR41TYkghPJi0G0Y6jIB7tAWYidK7iH1E5+v38tc4PqD0hCY+P46lbYeWjHwlWw==",
       "path": "dynamixpostgresqlhandler/1.0.0",
       "hashPath": "dynamixpostgresqlhandler.1.0.0.nupkg.sha512"
+    },
+    "Intersoft.Crosslight/6.0.5000.975": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-icRCEz9Fl9HI7LyiUniMnIN8TeI1vRI4QPZQyGDx3sTyX5YxDGNHE2uLXG3ShsI1EOSY4x/Vxycs/QTOL3uqnQ==",
+      "path": "intersoft.crosslight/6.0.5000.975",
+      "hashPath": "intersoft.crosslight.6.0.5000.975.nupkg.sha512"
+    },
+    "Intersoft.Crosslight.Services.Reporting/6.0.5000.975": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C+LSxIjZ1GWEoWb7C866OzGuVfzRb5+hHlZS7D1rteMLVRtes95NVhX0g5iCgwUt3xI+pxTGiaAv6JmJhzmbIA==",
+      "path": "intersoft.crosslight.services.reporting/6.0.5000.975",
+      "hashPath": "intersoft.crosslight.services.reporting.6.0.5000.975.nupkg.sha512"
     },
     "Marten/3.5.0": {
       "type": "package",

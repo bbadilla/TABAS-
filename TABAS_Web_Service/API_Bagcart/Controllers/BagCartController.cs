@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API_Bagcart.Controllers
 {
    
-        [Route("api/[controller]")]
+        
         [ApiController]
         public class BagCartController : Controller
         {
@@ -20,26 +20,50 @@ namespace API_Bagcart.Controllers
             {
                 _contactMasterRepo = contactMasterRepo;
             }
-
+        [Route("api/[controller]")]
         [HttpGet]
         public ActionResult<List<BagCart>> GetAll()
         {
             return _contactMasterRepo.GetAll();
         }
 
+        [Route("api/[controller]")]
+        [HttpPost]
+        public ActionResult<BagCart> Create([FromBody]BagCart contactMaster)
+        {
+            if (contactMaster == null || !ModelState.IsValid)
+            {
+                return BadRequest("Invalid State");
+            }
 
-        //[HttpPost]
-        //public async Task<ActionResult<User>> Edit([FromBody]User contactMaster)
-        //{
-        //    if (contactMaster == null || !ModelState.IsValid)
-        //    {
-        //        return BadRequest("Invalid State");
-        //    }
+            return _contactMasterRepo.Create(contactMaster);
+        }
 
-        //    return await _contactMasterRepo.Edit(contactMaster);
-        //}
+        [Route("api/[controller]/asign")]
+        [HttpPut]
+        public ActionResult<BagCart> Asign_BC_flight([FromBody]BagCart contactMaster)
+        {
+            if (contactMaster == null || !ModelState.IsValid)
+            {
+                return BadRequest("Invalid State");
+            }
+
+            return _contactMasterRepo.Asign_BC_Flight(contactMaster);
+        }
+
+        [Route("api/[controller]/close")]
+        [HttpPut]
+        public ActionResult<BagCart> Close_BC([FromBody]BagCart contactMaster)
+        {
+            if (contactMaster == null || !ModelState.IsValid)
+            {
+                return BadRequest("Invalid State");
+            }
+
+            return _contactMasterRepo.Close_BC(contactMaster);
+        }
 
 
     }
-    
+
 }

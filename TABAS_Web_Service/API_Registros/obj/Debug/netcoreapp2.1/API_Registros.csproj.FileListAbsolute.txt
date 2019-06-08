@@ -12,3 +12,4 @@ C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registr
 C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\bin\Debug\netcoreapp2.1\API_Registros.pdb
 C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.dll
 C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\API_Registros.pdb
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Registros\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

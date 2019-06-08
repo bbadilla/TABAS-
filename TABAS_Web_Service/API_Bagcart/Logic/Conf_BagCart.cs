@@ -53,33 +53,56 @@ namespace API_Bagcart.Logic
             }
         }
 
-        //public async Task<BagCart> Edit(BagCart persona)
-        //{
-        //    try
-        //    {
-        //        using (IDbConnection con = Connection)
-        //        {
-        //            string sQuery = "udsp_ins_usuario";
-        //            con.Open();
-        //            DynamicParameters param = new DynamicParameters();
-        //            param.Add("@Nombre", persona.Nombre);
-        //            param.Add("@Apellido1", persona.Apellido1);
-        //            param.Add("@Apellido2", persona.Apellido2);
-        //            param.Add("@Telefono", persona.Telefono);
-        //            param.Add("@Carne", persona.Carne);
-        //            param.Add("@Correo", persona.Correo);
-        //            param.Add("@Contraseña", persona.Contraseña);
-        //            param.Add("@Rol", persona.ID_Rol);
-        //            param.Add("@Universidad", persona.Universidad);
-        //            var result = await con.QueryAsync<BagCart>(sQuery, param, commandType: CommandType.StoredProcedure);
-        //            return result.FirstOrDefault();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
+        public  BagCart Create(BagCart bagcart)
+        {
+            try
+            {
+                using (IDbConnection con = Connection)
+                {
+                    con.Open();
+                    var result =  con.Query<BagCart>("INSERT INTO \"bagcart\" VALUES("+ bagcart.identificador + ",'" +bagcart.modelo +"','" + bagcart.marca +  "');");
+                    return result.FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public BagCart Asign_BC_Flight(BagCart bagcart)
+        {
+            try
+            {
+                using (IDbConnection con = Connection)
+                {
+                    con.Open();
+                    var result = con.Query<BagCart>("UPDATE \"bagcart\" SET \"c_vuelo\" ='" + bagcart.c_vuelo + "'" + " WHERE \"identificador\" ='"+ bagcart.identificador + "'");
+                    return result.FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public BagCart Close_BC(BagCart bagcart)
+        {
+            try
+            {
+                using (IDbConnection con = Connection)
+                {
+                    con.Open();
+                    var result = con.Query<BagCart>("UPDATE \"bagcart\" SET \"sello\" ='" + bagcart.sello + "'" + " WHERE \"identificador\" ='" + bagcart.identificador + "'");
+                    return result.FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
     }
 }

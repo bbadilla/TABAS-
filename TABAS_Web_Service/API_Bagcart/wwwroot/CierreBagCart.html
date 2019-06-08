@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BagCart</title>
+    <link rel="stylesheet" href="css/bagcart.css">
+</head>
+
+<body>
+
+    <div class="cod-container">
+        <div class="form-header">
+            <img src="img/Logo.png" alt="Logo de CodigoMasters">
+            <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
+        </div>
+
+        <div class="form-content">
+            <form  class="cod-form">
+                <div class="form-title">
+                    <h3>Cierre de BagCart</h3>
+                </div>
+
+                <div class="input-group">
+                    <input type="user" class="form-input"  id="identificador">
+                    <label class="label" for="reg-correo">Identificador</label>
+                </div>
+                <div class="input-group">
+                    <input type="user" maxlength="10" class="form-input"  id="sello">
+                    <label class="label" for="reg-correo">Sello de seguridad</label>
+                </div>
+
+
+                <div class="input-group">
+                    <input type="button" id="Save" class="form-input" value="Cerrar">
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="Scripts/jquery-3.3.1.js"></script>>
+        <script>
+            $(document).ready(function () {
+                $("#Save").click(function () {
+                    var data = {
+                        identificador: $("#identificador").val(),
+                        sello: $("#sello").val()
+                    }
+                    var json = JSON.stringify(data)
+                    $.ajax({
+                        url: '/api/bagcart/close/',
+                        type: 'PUT',
+                        contentType: "application/json; charset=utf-8",
+                        data: json,
+                        success: function (results) {
+                        }
+                    })
+                });
+            });
+
+        </script>
+
+</body>
+
+</html>

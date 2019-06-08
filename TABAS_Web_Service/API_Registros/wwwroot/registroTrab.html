@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilosTrab.css">
+</head>
+
+<body>
+
+    <div class="cod-container">
+        <div class="form-header">
+            <img src="img/Logo.png" alt="Logo de CodigoMasters">
+            <h1>T.<span>A.</span>B.<span>A.</span>S</h1>
+        </div>
+
+        <div class="form-content">
+            <form a class="cod-form">
+                <div class="form-title">
+                    <h3>SISTEMA DE REGISTRO</h3>
+                </div>
+                <div class="input-group">
+                    <input type="user" class="form-input"  id="nombre">
+                    <label class="label" for="reg-correo">Nombre</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="user" class="form-input"  id="a1">
+                    <label class="label" for="reg-correo">Primer Apellido</label>
+                </div>
+                <div class="input-group">
+                    <input type="user" class="form-input"  id="a2">
+                    <label class="label" for="reg-correo">Segundo Apellido</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" class="form-input"  id="telefono">
+                    <label class="label" for="reg-correo">Telefono</label>
+                </div>
+                <div class="input-group">
+                    <input type="user" class="form-input"  id="correo">
+                    <label class="label" for="reg-correo">Correo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input"  id="pass">
+                    <label class="label" for="reg-pass">Contraseña</label>
+                </div>
+
+
+                <div class="input-group select">
+
+                    <select id="rol" class="select-css" >
+                        <option value=1>Master</option>
+                        <option value=2>Recepcionista</option>
+                        <option value=3>Escaner</option>
+                        <option value=4>Cargador</option>
+                    </select>
+                </div>
+
+
+                <div class="input-group">
+                    <input type="button" onclick ="send()" class="form-input" value="Registrar">
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/registroClient.js"></script>
+
+        <script src="Scripts/jquery-3.3.1.js"></script>
+        <script>
+            function send() {
+                var person = {
+                    nombre: $("#nombre").val(),
+                    apellido1: $("#a1").val(),
+                    apellido2: $("#a2").val(),
+                    telefono: $("#telefono").val(),
+                    correo: $("#correo").val(),
+                    contraseña: $("#pass").val(),
+                    iD_Rol: $("#rol").val()
+
+                }
+                $('#target').html('sending..');
+                $.ajax({
+                    url: 'api/user/',
+                    type: 'post',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    success: function (data) {
+                        $('#target').html(data.msg);
+                        alert("Registro valido");
+                    },
+                    data: JSON.stringify(person)
+                });
+            }
+        </script>
+</body>
+</html>

@@ -6,13 +6,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Include="wwwroot\Scripts\bootstrap.js" />
+    <None Include="wwwroot\Scripts\bootstrap.min.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.intellisense.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.min.map" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.slim.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="wwwroot\Scripts\jquery-3.3.1.slim.min.map" />
+    <None Include="wwwroot\Scripts\jquery.unobtrusive-ajax.js" />
+    <None Include="wwwroot\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="wwwroot\Scripts\modernizr-2.8.3.js" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.60.6" />
     <PackageReference Include="Docker.DotNet" Version="3.125.2" />
     <PackageReference Include="Drapper" Version="1.2.0" />
+    <PackageReference Include="Intersoft.Crosslight.Services.Reporting" Version="6.0.5000.975" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />

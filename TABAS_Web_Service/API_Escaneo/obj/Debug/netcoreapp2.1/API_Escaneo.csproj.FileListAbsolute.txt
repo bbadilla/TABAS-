@@ -1,0 +1,14 @@
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\bin\Debug\netcoreapp2.1\API_Escaneo.deps.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\bin\Debug\netcoreapp2.1\API_Escaneo.runtimeconfig.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\bin\Debug\netcoreapp2.1\API_Escaneo.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\bin\Debug\netcoreapp2.1\API_Escaneo.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.RazorTargetAssemblyInfo.cache
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\bin\Debug\netcoreapp2.1\API_Escaneo.pdb
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.dll
+C:\Users\Bryan\Desktop\web_service_TABAS\TABAS_Service\API_Registros\API_Escaneo\obj\Debug\netcoreapp2.1\API_Escaneo.pdb

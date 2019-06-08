@@ -9,6 +9,8 @@ namespace API_Bagcart.Logic
     public interface I_BagCart
     {
         List<BagCart> GetAll();
-        //Task<BagCart> Edit(BagCart user);
+        BagCart Create(BagCart bagbart);
+        BagCart Asign_BC_Flight(BagCart bagcart);
+        BagCart Close_BC(BagCart bagcart);
     }
 }
