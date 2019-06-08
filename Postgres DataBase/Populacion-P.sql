@@ -8,10 +8,23 @@ INSERT INTO Aeronave(Modelo, Capacidad, A_Economicos, A_Ejecutivos)
 		('757-200', 289, 175, 114),
 		('737-700', 215, 150, 65),
 		('MD-80', 172, 100, 72),
-		('320', 150, 100, 150)
-INSERT INTO public.vuelo(
-	codigo, estado, c_economico, c_ejecutivo, f_salida, f_llegada, a_salida, a_llegada, millas, id_aeronave)
-	VALUES ('A00D', '0', 100, 200, '2019-06-04', '2019-06-05', 'AAA', 'AAB', 1000, 1);
-INSERT INTO public.bagcart(
+		('320', 150, 100, 150);
+
+INSERT INTO vuelo(codigo, estado, c_economico, c_ejecutivo, f_salida, f_llegada, a_salida, a_llegada, millas, id_aeronave)
+	VALUES
+	 ('A00D', '0', 100, 200, '2019-06-04', '2019-06-05', 'AAA', 'VIN', 1000, NULL),
+	 ('SE87', '1', 200, 150, '2019-08-22', '2019-08-23', 'ABX', 'DEC', 500, NULL),
+	 ('S34O', '0', 100, 100, '2019-07-21', '2019-07-21', 'QSD', 'BLO', 800, NULL),
+	 ('SE87', '1', 300, 150, '2020-05-11', '2019-05-11', 'ABX', 'EMM', 500, NULL),
+	 ('S375', '0', 200, 180, '2019-08-30', '2019-09-01', 'DEC', 'AAA', 200, NULL),
+	 ('DO54', '1', 100, 100, '2020-01-30', '2020-01-30', 'BRY', 'MAR', 500, NULL),
+	 ('M4R0', '0', 200, 150, '2019-08-22', '2019-08-23', 'ABX', 'VIN', 700, NULL),
+	 ('0RT1', '1', 300, 100, '2019-08-15', '2019-08-15', 'VIN', 'DEC', 900, NULL),
+	 ('DE54', '0', 200, 150, '2020-09-10', '2019-09-11', 'QSD', 'MAR', 400, NULL),
+	 ('42FD', '1', 300, 100, '2019-12-12', '2019-12-12', 'EMM', 'VIN', 500, NULL),
+	 ('1D3E', '0', 200, 150, '2019-11-22', '2019-11-23', 'ABX', 'AAA', 600, NULL),
+	 ('V1N1', '1', 300, 200, '2019-10-04', '2019-10-05', 'QSD', 'DEC', 500, NULL);
+	 
+INSERT INTO bagcart(
 	modelo, marca, c_vuelo, sello)
 	VALUES ('2019', 1, 'A00D', NULL);
